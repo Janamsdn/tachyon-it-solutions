@@ -2,104 +2,365 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>TACHYON IT SOLUTIONS | IT Technology Leader</title>
+
+  <!-- SEO -->
+  <meta name="description" content="TACHYON IT SOLUTIONS – Global Technology Advisory, Product Leadership & Cybersecurity Consulting. Open to executive roles and equity-aligned venture partnerships." />
+  <meta name="keywords" content="CTO, Enterprise Architect, Technical Co-Founder, Cybersecurity Consulting, Cloud Architecture, GenAI, AWS, Azure, GCP" />
+  <meta name="author" content="TACHYON IT SOLUTIONS" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tachyon IT Solutions</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; color: #003366; }
-    header { background: #ffffff; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #e4e9f2; }
-    nav a { margin: 0 15px; text-decoration: none; color: #003366; font-weight: bold; }
-    .hero { background: #eaf3ff; padding: 80px 40px; text-align: center; }
-    .hero h1 { font-size: 48px; margin-bottom: 20px; }
-    .hero p { font-size: 20px; max-width: 700px; margin: auto; }
-    .section { padding: 60px 40px; }
-    .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    .card h3 { margin-top: 0; }
-    footer { background: #003366; color: white; padding: 40px; text-align: center; }
-    @media (max-width: 800px) { .services { grid-template-columns: 1fr; } }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0f14;
+      color: #e6e9ef;
+      overflow-x: hidden;
+    }
+
+    /* Smooth animated background */
+    .bg {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at 20% 20%, #142033, #0b0f14 60%);
+      animation: shift 20s infinite alternate;
+      z-index: -1;
+    }
+
+    @keyframes shift {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(25deg); }
+    }
+
+    header {
+      padding: 80px 10%;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-size: 18px;
+      font-weight: 400;
+      opacity: 0.85;
+      margin-top: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 6px 14px;
+      border: 1px solid #2f80ff;
+      color: #2f80ff;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .toggle {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+      gap: 20px;
+    }
+
+    .toggle button {
+      background: none;
+      border: 1px solid #444;
+      color: #e6e9ef;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .toggle button.active {
+      border-color: #2f80ff;
+      color: #2f80ff;
+    }
+
+    section {
+      padding: 60px 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    p, li {
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .services, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      border: 1px solid #1c2430;
+      padding: 24px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    footer {
+      padding: 40px 10%;
+      text-align: center;
+      border-top: 1px solid #1c2430;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .hidden {
+      display: none;
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <h2>Tachyon IT Solutions</h2>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<div class="bg"></div>
 
-  <section class="hero">
-    <h1>Accelerating Your Digital Future</h1>
-    <p>Tachyon IT Solutions delivers high‑performance technology consulting, cloud modernisation, and secure enterprise architecture — with speed, precision, and excellence.</p>
-  </section>
+<header>
+  <h1>TACHYON IT SOLUTIONS</h1>
+  <h2>Enterprise Architecture • Platform Strategy • Cybersecurity • Transversal Leadership</h2>
+  <div class="badge">Current Enterprise Engagements • UK • Europe • USA • Middle East</div>
+</header>
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h3>About TACHYON IT SOLUTIONS</h3>
+  <p>
+    TACHYON IT SOLUTIONS is a global technology advisory and consulting firm specializing in <b>enterprise architecture, cloud platforms, cybersecurity, and digital transformation</b>. We help organizations and founders achieve scalable, secure, and high-impact technology outcomes through strategic guidance, hands-on architecture, and execution-focused delivery.
+  </p>
+  <p>
+    With a focus on <b>innovation, operational resilience, and enterprise-grade platforms</b>, we bridge the gap between business strategy and technical implementation, ensuring solutions are ready for today's challenges and tomorrow’s opportunities.
+  </p>
+</section>
 
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>Tachyon IT Solutions is a modern IT consulting company specialising in cloud transformation, integration architecture, mobile platform engineering, and enterprise‑grade digital solutions. We help organisations move faster, build smarter, and operate securely in a rapidly evolving technology landscape.</p>
-  </section>
 
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <p><strong>Janardahn Chokkani</strong> brings 20+ years of deep technical and architectural expertise across Web, Mobile, Cloud, AI/ML, Data Engineering, and Enterprise Integration. His experience spans multiple global industries including Shipping & Logistics, Banking, Insurance, Healthcare, Pharmaceuticals, Retail, and Semiconductor IoT.</p>
 
-    <h3>Key Roles & Expertise</h3>
-    <ul>
-      <li><strong>Enterprise / Solution / Technical Architect Lead</strong> with hands-on development experience in C#, Java, Scala, Kotlin, Android, iOS (Swift), and Node.js.</li>
-      <li>Cloud Specialist across <strong>AWS, Azure, GCP</strong>, with strong experience in serverless, event-driven architectures, and IaC (Terraform, CloudFormation).</li>
-      <li>AI & Agentic AI solution design using <strong>AWS Bedrock, LangChain, SageMaker, OpenAI</strong> and Generative AI workflows.</li>
-      <li>Big Data engineering with Hadoop, Spark, PySpark, and Snowflake.</li>
-      <li>Enterprise Integration across <strong> JAVA Springboot,MuleSoft, API-led patterns, Apigee, Layer7 and Kong </strong>, and microservices architectures.</li>
-      <li>Mobile engineering leader (Android/iOS) with secure app design and API integration.</li>
-    </ul>
+<div class="toggle">
+  <button id="recruiterBtn" class="active">Recruiter View</button>
+  <button id="investorBtn">Investor View</button>
+</div>
 
-    <h3>Highlighted Project Experience</h3>
-    <ul>
-      <li><strong>CMACGM (2023 – Current) – Lead GenAI & Data Architect:</strong> Designed AWS-first architectures, IoT ingestion pipelines, predictive AI models, and an agentic AI system automating 60% of customer service workflows. Delivered GenAI-powered document intelligence and analytics frameworks.</li>
-      <li><strong>Sanofi (2021 – 2023) – AWS Solution Architect:</strong> Delivered AI-powered clinical data pipelines, real-time IoT analytics, RAG/Vector search platforms, and automated MLOps pipelines with SageMaker and Bedrock.</li>
-      <li><strong>Cumberland Building Society (2019 – 2021) – Solution Architect:</strong> Led D365/Power Platform architecture, designed cloud integration patterns, mobile apps, and large-scale API/microservice projects.</li>
-      <li><strong>IBM (2018 – 2019) – Tech Lead Architect:</strong> Designed secure mobile banking applications, Open Banking integrations, microservices, and cloud migration patterns.</li>
-      <li><strong>Novartis (2018) – Data Integration Consultant:</strong> Delivered GxP-compliant clinical data integration and cloud transformation.</li>
-      <li><strong>JTI, Qualcomm, CSR, Allstate, Ez-Runner (2010–2017):</strong> Technical leadership across mobile, IoT, API architecture, and enterprise digital engineering.</li>
-    </ul>
+<!-- RECRUITER VIEW -->
+<section id="recruiterView">
+  <h3>Executive Profile</h3>
+  <p><b>Enterprise / Solution /Cybersecurity/ Technical Architect | Technology Leader</b></p>
 
-    <h3>Certifications</h3>
-    <ul>
-      <li>AWS Certified Solutions Architect</li>
-      <li>Azure Certified Solutions Architect</li>
-      <li>TOGAF 9.1 Foundation</li>
-      <li>MCTS – Microsoft Certified Technology Specialist</li>
-      <li>SAFe Certified Professional</li>
-    </ul>
-  </section>
+<p>
+Enterprise, Solution, and Technical Architect with <b>20+ years of experience</b> delivering large-scale technology platforms across <b>web, mobile, cloud, data, and IoT</b> domains. Proven track record of leading architecture, engineering, and delivery for <b>enterprise and regulated environments</b>, supporting mission-critical systems used by millions of users.
+</p>
 
-  <section id="services"" class="section">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Cloud & Infrastructure</h3>
-        <p>Azure, AWS, and GCP- hybrid cloud architecture designed for scalability, security, and cost efficiency.</p>
-      </div>
-      <div class="card">
-        <h3>Integration & APIs</h3>
-        <p>MuleSoft, Solace, Salesforce, MFT Integration patterns, and modern API‑driven architecture.</p>
-      </div>
-      <div class="card">
-        <h3>Digital Platforms & Mobile</h3>
-        <p>End‑to‑end design and architecture for iOS, Android and Web - cross‑platform enterprise mobile applications.</p>
-      </div>
+<p>
+Extensive experience across <b>cloud platforms (AWS, Azure, GCP)</b>, <b>integration and API architectures</b>, <b>data platforms (Hadoop, Spark)</b>, and <b>modern microservices-based systems</b>. Hands-on background in multiple programming languages including <b>Java, C#, Scala, Kotlin, Android, iOS, Python, and Node.js</b>, combined with strong architectural governance and design leadership.
+</p>
+
+<p>
+Strong practitioner of <b>Enterprise Architecture frameworks</b> including <b>TOGAF, Zachman, ArchiMate, and ITIL</b>, with the ability to translate business strategy into <b>scalable, secure, and delivery-ready technical solutions</b>. Experienced in <b>SaaS, PaaS, and IaaS</b> models, cloud migration, platform modernisation, and <b>secure-by-design architectures</b>.
+</p>
+
+<p>
+Recognised for <b>clear stakeholder communication</b>, mentoring high-performing teams, and aligning architecture with business outcomes using <b>Agile, SAFe, and modern delivery models</b>. Brings a pragmatic, execution-focused mindset while maintaining enterprise governance, quality, and risk management.
+</p>
+
+<p>
+<b>Domain Experience:</b> Semiconductors & IoT (Bluetooth & Wi-Fi), Banking & Payments (Payments, IDV&A), Mortgage & Lending, Insurance, Healthcare & Life Sciences, Retail & e-Commerce, Shipping & Logistics.
+<p><b>Core Consultancy Areas – Architecture & Process</b></p>
+
+<p>
+<b>Enterprise & Solution Architecture:</b> Definition and governance of enterprise and solution architectures aligned to business strategy, operating models, and long‑term platform evolution across cloud and hybrid environments.
+</p>
+
+<p>
+<b>Architecture Frameworks & Standards:</b> Practical application of <b>TOGAF, ArchiMate, SAFe, and Agile</b> to ensure consistent architecture decision‑making, traceability, and delivery alignment.
+</p>
+
+<p>
+<b>Business & Stakeholder Alignment:</b> Translating business goals, regulatory requirements, and stakeholder expectations into clear architectural roadmaps, target states, and investment‑ready technology strategies.
+</p>
+
+<p>
+<b>Delivery & Governance Processes:</b> Establishment of architecture governance, design authority, and assurance processes including <b>SOW, HLD, LLD, PAD</b>, ensuring quality, risk control, and delivery confidence.
+</p>
+
+<p>
+<b>Platform, Integration & Process Design:</b> Definition of end‑to‑end processes covering cloud platforms, integration, APIs, data, and security, enabling scalable delivery and operational resilience.
+</p>
+
+<p>
+<b>Agile & SAFe Enablement:</b> Aligning architecture with Agile and SAFe delivery models to support incremental delivery, cross‑team coordination, and continuous improvement at enterprise scale.
+</p>
+
+  <div class="services">
+    <div class="card">
+      <h4>Cloud & Infrastructure</h4>
+      <p>Design and delivery of secure, scalable, and cost‑optimised hybrid cloud architectures across AWS, Azure, and GCP for enterprise and regulated environments,designed for scalability, security, and cost efficiency.</p>
     </div>
-  </section>
+    <div class="card">
+      <h4>Integration & APIs</h4>
+      <p>Enterprise integration leadership across API‑led, event‑driven, and microservices architectures using MuleSoft, Solace, Salesforce integration, MFT, and modern API gateways(kong, APIGee and Layer7).</p>
+    </div>
+    <div class="card">
+      <h4>Digital Platforms & Mobile</h4>
+      <p>End‑to‑end architecture and delivery leadership for enterprise‑grade iOS, Android, and web platforms supporting high‑availability, scale, and long‑term product evolution..</p>
+    </div>
+    <div class="card">
+      <h4>Cybersecurity & Secure Architecture</h4>
+      <p>Secure‑by‑design architecture across cloud, APIs, IAM, and data platforms, aligned with enterprise risk management, regulatory compliance, and cyber resilience standards.</p>
+    </div>
+  </div>
 
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <p>For business enquiries, partnerships, or project discussions:</p>
-    <p><strong>Email:</strong> info@tachyonitsolutions.com</p>
-  </section>
+  <h3> Project Experience</h3>
+  <div class="projects">
 
-  <footer>
-    <p>© 2025 Tachyon IT Solutions Ltd. All rights reserved.</p>
-  </footer>
+    <div class="card">
+      <strong>CMACGM (2023–Current)</strong><br/>
+      Lead GenAI & Data Architect delivering <b>multi‑cloud (AWS, Azure, GCP)</b> GenAI platforms, IoT ingestion, predictive AI, and <b>agentic AI solutions automating 60%+ of customer workflows</b> across global shipping operations.
+    </div>
+  
+    <div class="card">
+      <strong>Sanofi (2021–2023)</strong><br/>
+      Cloud/Digital Solution Architect leading <b>AI‑enabled clinical data platforms</b>, real‑time pipelines, <b>RAG/vector search</b>, and automated <b>MLOps using SageMaker and Bedrock</b> in regulated life‑sciences environments.
+    </div>
+  
+    <div class="card">
+      <strong>Cumberland Building Society Bank</strong><br/>
+      Solution Architect driving <b>financial services transformation</b> across D365 and Power Platform, designing secure <b>cloud integrations, API‑led microservices</b>, and enterprise mobile solutions.
+    </div>
+  
+    <div class="card">
+      <strong>IBM & Nationwide Bank</strong><br/>
+      Tech Lead Architect delivering <b>secure digital banking platforms</b>, Open Banking integrations, <b>microservices‑based architectures</b>, and large‑scale cloud migration programmes.
+    </div>
+  
+    <div class="card">
+      <strong>Novartis</strong><br/>
+      Data Integration Consultant designing <b>GxP‑compliant data integration and cloud architectures</b>, enabling governed clinical data platforms aligned with regulatory and quality standards.
+    </div>
+  
+    <div class="card">
+      <strong>JTI, Qualcomm, CSR, Allstate, Ez‑Runner</strong><br/>
+      Enterprise architecture and technical leadership across <b>mobile platforms, IoT solutions, API ecosystems</b>, and large‑scale digital engineering programmes.
+    </div>
+  
+  </div>
+  
+</section>
+
+<!-- INVESTOR VIEW -->
+<section id="investorView" class="hidden">
+  <h3>Founder & Technical Co‑Founder</h3>
+  <p><b>Founder & Technical Co‑Founder</b></p>
+
+  <p>
+  I work with <b>founders and investor‑operators</b> who value execution discipline, technical depth, and scalable outcomes. My focus is building technology ventures that are <b>designed to grow, engineered to last, and trusted at enterprise level</b>.
+  </p>
+  
+  <p>
+  I specialise in <b>bridging early‑stage innovation with enterprise‑grade delivery</b>, helping ventures move from concept to production without accumulating technical debt or delivery risk. This includes shaping the technical vision, establishing strong foundations, and ensuring platforms are secure, scalable, and investment‑ready from day one.
+  </p>
+  
+  <p>
+  As a <b>Founder and Technical Co‑Founder</b>, I combine hands‑on engineering leadership with enterprise architecture discipline, enabling teams to move fast while maintaining long‑term platform integrity.
+  </p>
+  
+  <p><b>What I Bring as a Technical Co‑Founder</b></p>
+  
+  <p>
+  <b>Platform & Product Architecture:</b> Architecture leadership from zero to scale, including MVP definition, target state design, and evolutionary platform roadmaps.
+  </p>
+  
+  <p>
+  <b>Hands‑On Engineering Leadership:</b> Direct technical leadership, setting standards, supporting delivery teams, and ensuring high‑quality execution.
+  </p>
+  
+  <p>
+  <b>Cloud, Data, API & Cybersecurity Foundations:</b> Secure, scalable cloud‑native architectures aligned with enterprise security, resilience, and compliance expectations.
+  </p>
+  
+  <p>
+  <b>Team Building & Mentoring:</b> Building and mentoring high‑performing engineering teams with strong ownership, accountability, and delivery discipline.
+  </p>
+  
+  <p>
+  <b>Delivery Governance:</b> Pragmatic governance balancing speed, quality, risk management, and long‑term sustainability.
+  </p>
+  
+  <p>
+  <b>Investor‑Grade Technical Strategy:</b> Clear, credible technical strategies that support growth, due diligence, and long‑term valuation.
+  </p>
+  
+  <p>
+  I am <b>open to equity‑aligned co‑founder partnerships</b>, particularly with founders or co‑founders who bring investment capability, market access, or strategic value, and who prioritise long‑term platform quality over short‑term shortcuts.
+  </p>
+  
+  <p><b>Enterprise & Programme Credibility</b></p>
+  
+  <p>
+  Alongside venture work, I have <b>delivered and continue to deliver technology leadership</b> across large‑scale enterprise programmes in regulated, high‑availability environments supporting <b>millions of users</b>.
+  </p>
+  
+  <p>
+  This experience brings execution maturity, governance strength, and risk awareness that ensures ventures are built to scale into enterprise customers, partnerships, and future acquisition or IPO pathways.
+  </p>
+  
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h3>Contact</h3>
+  <p>If you would like to discuss technology strategy, enterprise architecture, or potential co-founder partnerships, you can reach us via:</p>
+  <ul>
+    <li><b>Email:</b> <a href="mailto:contact@tachyonitsolutions.com" style="color:#2f80ff;">contact@tachyonitsolutions.com</a></li>
+    <li><b>Phone:</b> +44 1234 567890</li>
+    <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/company/tachyon-it-solutions" style="color:#2f80ff;" target="_blank">linkedin.com/company/tachyon-it-solutions</a></li>
+  </ul>
+</section>
+<footer>
+  © TACHYON IT SOLUTIONS |  Technology Advisory & Venture Partnerships
+</footer>
+
+<script>
+  const recruiterBtn = document.getElementById('recruiterBtn');
+  const investorBtn = document.getElementById('investorBtn');
+  const recruiterView = document.getElementById('recruiterView');
+  const investorView = document.getElementById('investorView');
+
+  recruiterBtn.onclick = () => {
+    recruiterView.classList.remove('hidden');
+    investorView.classList.add('hidden');
+    recruiterBtn.classList.add('active');
+    investorBtn.classList.remove('active');
+  };
+
+  investorBtn.onclick = () => {
+    investorView.classList.remove('hidden');
+    recruiterView.classList.add('hidden');
+    investorBtn.classList.add('active');
+    recruiterBtn.classList.remove('active');
+  };
+</script>
+
 </body>
-</html>
 
+  
+
+</html>
